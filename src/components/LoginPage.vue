@@ -7,8 +7,8 @@ const username = ref('')
 const password = ref('')
 
 const logUserIn = () => {
+    console.log(username.value)
     if (login(username.value, password.value)) {
-        console.log('loggin in')
     }
 }
 </script>
@@ -17,7 +17,7 @@ const logUserIn = () => {
     <form class="login-form" @submit.prevent="logUserIn">
     <input v-model="username" type="text" placeholder="Username" />
     <input v-model="password" type="text" placeholder="Password" />
-    <button type="submit" class="bg-green-500 px-4 py-2" @click="login('admin', 'admin')">Log In</button>
+    <button type="submit" class="bg-green-500 px-4 py-2">Log In</button>
     </form>
 </template>
 
