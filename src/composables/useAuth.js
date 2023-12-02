@@ -33,5 +33,9 @@ export const useAuth = () => {
         }
         return false
     }
-    return { isAuthenticated, user, login }
+    const logout = () => {
+        isAuthenticated.value = false
+        user.value = {}
+    }
+    return { isAuthenticated, user, login, logout }
 }
