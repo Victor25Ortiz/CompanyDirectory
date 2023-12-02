@@ -1,8 +1,9 @@
 <script setup>
-  import NavMenu from '@/components/NavMenu.vue'
+  import NavBar from '@/components/NavBar.vue'
+  import MainPage from '@/components/MainPage.vue'
 </script>
 
 <template>
-  <NavMenu />
-  <RouterView />
+  <NavBar />
+  <MainPage />
 </template>
